@@ -1,0 +1,23 @@
+web-test-automation/
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── testautomation/
+│   │   │           ├── config/
+│   │   │           ├── driver/
+│   │   │           ├── pages/
+│   │   │           └── utils/
+│   └── test/
+│       ├── java/
+│       │   └── com/
+│       │       └── testautomation/
+│       │           ├── runners/
+│       │           └── stepdefinitions/
+│       └── resources/
+│           ├── features/
+│           └── config.properties
+├── target/
+├── .gitignore
+├── pom.xml
+└── README.md 

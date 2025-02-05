@@ -1,0 +1,60 @@
+{
+  "loginPage": {
+    "usernameInput": {
+      "type": "css",
+      "value": "input[placeholder='Username']"
+    },
+    "passwordInput": {
+      "type": "css",
+      "value": "input[placeholder='Password']"
+    },
+    "loginButton": {
+      "type": "xpath",
+      "value": "//*[@id=\"root\"]/div/div[2]/div/div[1]/div/div/div[4]/div"
+    },
+    "yourNameArea": {
+      "type": "css",
+      "value": "input[name='name']"
+    },
+    "callHelloWorldButton": {
+      "type": "css",
+      "value": "#serviceCallButton"
+    },
+    "resultText": {
+      "type": "css",
+      "value": "#text"
+    },
+    "dokumaTipi": {
+      "type": "css",
+      "value": "button[id='button1']"
+    },
+    "dokumaTipiSec": {
+      "type": "css",
+      "value": "efa-input-select-option[value='RYT']"
+    },
+    "belgeDetay": {
+      "type": "css",
+      "value": "efa-anchor[id='editIconButton']"
+    },
+    "belgeSilme": {
+      "type": "css",
+      "value": "efa-anchor[id='deleteIconButton']"
+    },
+    "filtrele": {
+      "type": "css",
+      "value": "efa-button[type='success']"
+    },
+    "yetkiliTanim": {
+      "type": "css",
+      "value": "efa-icon[icon='efa-icons:add']"
+    }
+  },
+  "homePage": {
+    "welcomeMessage": ".welcome-text",
+    "logoutButton": "#logout-btn"
+  },
+  "profilePage": {
+    "editButton": "#edit-profile",
+    "saveButton": ".save-changes"
+  }
+} 
