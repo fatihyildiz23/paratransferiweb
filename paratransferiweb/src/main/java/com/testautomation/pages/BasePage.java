@@ -9,11 +9,13 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
+import java.util.List;
 
 public class BasePage {
     protected WebDriver driver;
     protected WebDriverWait wait;
-    
+
+
     public BasePage() {
         this.driver = DriverManager.getDriver();
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -33,4 +35,15 @@ public class BasePage {
         wait.until(ExpectedConditions.elementToBeClickable(
             SelectorReader.getLocator(page, elementName)));
     }
-} 
+
+
+
+
+
+    protected List<WebElement> findElements(String page, String key) {
+
+        return driver.findElements(SelectorReader.getLocator(page, key));
+
+    }
+
+}

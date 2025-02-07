@@ -12,49 +12,96 @@
       "type": "xpath",
       "value": "//*[@id=\"root\"]/div/div[2]/div/div[1]/div/div/div[4]/div"
     },
-    "yourNameArea": {
-      "type": "css",
-      "value": "input[name='name']"
+    "openmoneytransfer": {
+      "type": "xpath",
+      "value": "//*[@id=\"root\"]/div/div[2]/div/div[1]/div/div/div/div[2]"
     },
-    "callHelloWorldButton": {
-      "type": "css",
-      "value": "#serviceCallButton"
+    "createaccount": {
+      "type": "xpath",
+      "value": "//*[contains(text(), 'Create an account')]"
     },
-    "resultText": {
-      "type": "css",
-      "value": "#text"
+    "accounttype": {
+      "type": "xpath",
+      "value": "/html/body/div[4]/div/div[2]/div/div/div/div/div[2]/div/div/div[3]/select"
     },
-    "dokumaTipi": {
+    "accountname": {
       "type": "css",
-      "value": "button[id='button1']"
+      "value": "    input[autocapitalize='sentences']\n"
     },
-    "dokumaTipiSec": {
-      "type": "css",
-      "value": "efa-input-select-option[value='RYT']"
+    "createbutton": {
+      "type": "xpath",
+      "value": "(//*[contains(text(), 'Create')])[3]"
     },
-    "belgeDetay": {
-      "type": "css",
-      "value": "efa-anchor[id='editIconButton']"
-    },
-    "belgeSilme": {
-      "type": "css",
-      "value": "efa-anchor[id='deleteIconButton']"
-    },
-    "filtrele": {
-      "type": "css",
-      "value": "efa-button[type='success']"
-    },
-    "yetkiliTanim": {
-      "type": "css",
-      "value": "efa-icon[icon='efa-icons:add']"
+    "transfermoney": {
+      "type": "xpath",
+      "value": "//*[contains(text(), 'Transfer money')]"
     }
   },
-  "homePage": {
-    "welcomeMessage": ".welcome-text",
-    "logoutButton": "#logout-btn"
+  "addMoneyPage": {
+
+  "addmoney": {
+    "type": "xpath",
+    "value": "//*[contains(text(), 'Add money')]"
   },
-  "profilePage": {
-    "editButton": "#edit-profile",
-    "saveButton": ".save-changes"
+  "amount": {
+    "type": "css",
+    "value": "input[inputmode='numeric']"
+  },
+  "sendmoney": {
+    "type": "xpath",
+    "value": "(//div[contains(text(), 'Send')])[4]"
+  },
+
+  "transactions": {
+    "type": "css",
+    "value": "div[class='css-175oi2r']>[style='margin-right: 4px;']"
+  },
+
+  "cardnumber": {
+    "type": "xpath",
+    "value": "/html/body/div[4]/div/div[2]/div/div/div/div/div[2]/div[2]/div/div[2]/input"
+  },
+
+
+  "cardholder": {
+    "type": "xpath",
+    "value": "/html/body/div[4]/div/div[2]/div/div/div/div/div[2]/div[2]/div/div[4]/input"
+  },
+
+
+  "expirydate": {
+    "type": "css",
+    "value": "input[placeholder='MM/YY']"
+  },
+
+
+  "cvv": {
+    "type": "xpath",
+    "value": "/html/body/div[4]/div/div[2]/div/div/div/div/div[2]/div[2]/div/div[6]/div[2]/div/input\n"
+  },
+  "addamount": {
+    "type": "xpath",
+    "value": "/html/body/div[4]/div/div[2]/div/div/div/div/div[2]/div[2]/div/div[8]/input"
   }
-} 
+  },
+  "editaccount": {
+    "editaccount": {
+      "type": "xpath",
+      "value": "//*[contains(text(), 'Edit account')]"
+    },"update": {
+      "type": "xpath",
+      "value": "//*[contains(text(), 'UPDATE')]"
+    },"accountname": {
+      "type": "css",
+      "value": "  input[autocapitalize='sentences']\n"
+    }
+
+  },
+  "myaccount": {
+    "accountname": {
+      "type": "css",
+      "value": ".css-146c3p1.r-1ozpqpt.r-yv33h5.r-1b43r93"
+    }
+
+  }
+}
