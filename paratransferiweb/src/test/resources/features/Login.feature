@@ -1,11 +1,11 @@
 Feature: Login Functionality
 
 
-  Background: Background
+  Background: Login
 
     * user is on login page
     * "loginPage.usernameInput" alanina "fatih.yildiz@testinium.com" yazilir
-    * "loginPage.passwordInput" alanina "Fatih1453+" yazilir
+    * "loginPage.passwordInput" alanina "password" yazilir
     * "loginPage.loginButton" elementine tiklanir
     * "loginPage.openmoneytransfer" elementine tiklanir
 
@@ -21,6 +21,7 @@ Feature: Login Functionality
     * sistem "1" saniye bekler
 
 
+  @smoke @regression
 
   Scenario: Add Money
 
@@ -32,13 +33,24 @@ Feature: Login Functionality
     * "addMoneyPage.amount" alanina "110" yazilir
     * "addMoneyPage.addamount" elementine tiklanir
 
-
+  @smoke @regression
     Scenario: Edit Account
 
       * "editaccount.editaccount" elementine tiklanir
       * "editaccount.accountname" alanina "Fatih" yazilir
       * "editaccount.update" elementine tiklanir
-      * "myaccount.accountname" elementinin değeri "Fatih22" olmalıdır
+      * "myaccount.accountname" elementinin değeri "Fatih" olmalıdır
+
+
+
+  @smoke @regression
+  Scenario: Edit Account Numeric Control
+
+    * "editaccount.editaccount" elementine tiklanir
+    * "editaccount.accountname" alanina "12345" yazilir
+    * "editaccount.update" elementine tiklanir
+    * "myaccount.accountname" elementinin değeri "Fatih" olmalıdır
+    * "myaccount.accountname" elementinin değeri "12345" den farklı olmalıdır
 
 
 

@@ -110,4 +110,21 @@ public class CommonSteps extends BasePage {
         }
     }
 
+    @Then("^\"([^\"]*)\" elementinin değeri \"([^\"]*)\" den farklı olmalıdır$")
+    public void checkElementValueNotEquals(String locator, String unexpectedValue) {
+        try {
+            logger.info("Element locator: {}, Unexpected value: {}", locator, unexpectedValue);
+            String[] locatorParts = locator.split("\\.");
+            waitForElementVisible(locatorParts[0], locatorParts[1]);
+            WebElement element = findElement(locatorParts[0], locatorParts[1]);
+            String actualValue = element.getAttribute("value");
+            
+            Assert.assertNotEquals("Element değeri beklenmeyen değere eşit!", unexpectedValue, actualValue);
+            logger.info("Element değeri doğrulandı (farklı): {}", actualValue);
+        } catch (Exception e) {
+            logger.error("Element değeri kontrolünde hata: ", e);
+            throw e;
+        }
+    }
+
 } 

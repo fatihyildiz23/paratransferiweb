@@ -1,4 +1,4 @@
-# Web Test Otomasyon Projesi
+# Para transferi otomasyon altyapısı
 
 Bu proje, web uygulamalarının otomatik testlerini gerçekleştirmek için Selenium 4, Cucumber ve Java kullanılarak oluşturulmuş bir test otomasyon frameworkudur.
 
