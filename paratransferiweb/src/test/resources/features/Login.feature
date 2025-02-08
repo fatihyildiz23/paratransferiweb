@@ -38,7 +38,7 @@ Feature: Login Functionality
       * "editaccount.editaccount" elementine tiklanir
       * "editaccount.accountname" alanina "Fatih" yazilir
       * "editaccount.update" elementine tiklanir
-      * "myaccount.accountname" elementinin değeri "Fatih" olmalıdır
+      * "myaccount.accountname" elementinin değeri "Fatih22" olmalıdır
 
 
 

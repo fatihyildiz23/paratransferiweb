@@ -100,7 +100,7 @@ public class CommonSteps extends BasePage {
             String[] locatorParts = locator.split("\\.");
             waitForElementVisible(locatorParts[0], locatorParts[1]);
             WebElement element = findElement(locatorParts[0], locatorParts[1]);
-            String actualValue = element.getAttribute("value");
+            String actualValue = element.getText();
             
             Assert.assertEquals("Element değeri beklenen değere eşit değil!", expectedValue, actualValue);
             logger.info("Element değeri doğrulandı: {}", actualValue);
