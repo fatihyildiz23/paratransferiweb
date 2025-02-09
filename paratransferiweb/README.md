@@ -8,7 +8,6 @@ Bu proje, web uygulamalarının otomatik testlerini gerçekleştirmek için Sele
 - Selenium 4.16.1
 - Cucumber 7.14.0
 - Maven
-- Allure Reporting
 - WebDriverManager
 - SLF4J & Logback
 - Jackson (JSON parsing)

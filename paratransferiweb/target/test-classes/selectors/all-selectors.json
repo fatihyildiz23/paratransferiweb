@@ -49,7 +49,7 @@
   },
   "sendmoney": {
     "type": "xpath",
-    "value": "(//div[contains(text(), 'Send')])[4]"
+    "value": "/html/body/div[4]/div/div[2]/div/div/div/div/div[2]/div[2]/div/div[13]"
   },
 
   "transactions": {
@@ -61,6 +61,11 @@
     "type": "xpath",
     "value": "/html/body/div[4]/div/div[2]/div/div/div/div/div[2]/div[2]/div/div[2]/input"
   },
+
+    "cardnumberinfo": {
+      "type": "xpath",
+      "value": "/html/body/div[4]/div/div[2]/div/div/div/div/div[2]/div[2]/div/div[2]/div[2]"
+    },
 
 
   "cardholder": {
